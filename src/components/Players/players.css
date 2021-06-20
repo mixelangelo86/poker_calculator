@@ -1,0 +1,24 @@
+.players {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.player {
+  float: left;
+  width: 100%;
+}
+
+.button {
+  height: 50px;
+  width: 130px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 10px;
+  background-color: #00537a;
+}

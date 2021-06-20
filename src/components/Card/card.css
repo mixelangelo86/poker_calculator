@@ -1,0 +1,123 @@
+.cards {
+  text-align: center;
+  width: 120px;
+  height: 170px;
+  margin: 0 auto;
+  display: inline;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 170px;
+  font: 16px 'Trebuchet MS';
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.card:before,
+.card:after {
+  content: attr(value);
+  position: absolute;
+  width: 12px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.card:before {
+  top: 4px;
+  left: 4px;
+}
+.card:after {
+  bottom: 4px;
+  right: 4px;
+  transform: rotate(180deg);
+}
+.hearts {
+  color: #e44145;
+}
+.hearts:before,
+.hearts:after {
+  content: attr(value) ' ♥';
+}
+.spades {
+  color: #252525;
+}
+.spades:before,
+.spades:after {
+  content: attr(value) ' ♠';
+}
+.clubs {
+  color: #3a915e;
+}
+.clubs:before,
+.clubs:after {
+  content: attr(value) ' ♣';
+}
+.diamonds {
+  color: #6485ee;
+}
+.diamonds:before,
+.diamonds:after {
+  content: attr(value) ' ♦';
+}
+
+.inner {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 15%;
+}
+.inner_centered {
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.column_centered {
+  justify-content: center;
+}
+
+.symbol {
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+}
+.symbol:before {
+  font-size: 30px;
+  line-height: 30px;
+}
+.hearts .symbol:before {
+  content: '♥';
+}
+.spades .symbol:before {
+  content: '♠';
+}
+.clubs .symbol:before {
+  content: '♣';
+}
+.diamonds .symbol:before {
+  content: '♦';
+}
+
+.symbol_rotated,
+.symbol:last-of-type {
+  transform: rotate(180deg);
+}
+.symbol:first-of-type {
+  transform: rotate(0);
+}
+.symbol_big {
+  flex-basis: 60px;
+}
+.symbol_huge {
+  flex-basis: 108px;
+}
