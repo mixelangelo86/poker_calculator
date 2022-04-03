@@ -1,0 +1,28 @@
+.cardPosition {
+  width: 80px;
+  height: 100px;
+  background-color: #65859a;
+  border-radius: 4px;
+  float: left;
+  margin: 10px;
+}
+
+.cross {
+  height: 30px;
+  position: relative;
+  opacity: 0.5;
+  background: #66676d;
+  width: 6px;
+  top: 30px;
+  left: 35px;
+}
+
+.cross::after {
+  width: 30px;
+  height: 6px;
+  position: absolute;
+  background: #66676d;
+  content: '';
+  left: -12px;
+  top: 12px;
+}

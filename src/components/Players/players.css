@@ -1,13 +1,15 @@
 .players {
-  float: left;
-  width: 50%;
-  padding: 10px;
+  /*float: left;*/
+  /*width: 50%;*/
+  display: block;
+  width: 100%;
+  padding: 0 auto;
   box-sizing: border-box;
 }
 
 .player {
-  float: left;
-  width: 100%;
+  /*float: left;*/
+  /*width: 100%;*/
 }
 
 .button {
@@ -21,4 +23,18 @@
   line-height: 50px;
   margin: 10px;
   background-color: #00537a;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.value {
+  font-size: 25px;
+  width: 130px;
+  float: left;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
 }

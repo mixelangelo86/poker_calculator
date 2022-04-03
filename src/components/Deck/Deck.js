@@ -4,6 +4,7 @@ import { getCardsPerSuit } from './utils';
 import { suitValue } from './constants';
 
 const Deck = ({ deck }) => {
+  console.log(deck);
   const cardsPerSuit = getCardsPerSuit(deck);
   let index = -1;
   const rowsPerSuit = Object.keys(cardsPerSuit).map(key => {

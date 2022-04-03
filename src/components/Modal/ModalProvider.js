@@ -5,10 +5,10 @@ import { createDeck } from '../JS/logic';
 
 const ModalProvider = ({ children }) => {
   const { Provider } = ModalContext;
-  const { isModalOpen, deck, toggleModal, onCardSelected } = useModal(createDeck());
+  const { isModalOpen, deck, toggleModal, onCardSelected, selectedPositions } = useModal(createDeck());
 
   return (
-    <Provider value={{ isModalOpen, deck, toggleModal, onCardSelected }}>
+    <Provider value={{ isModalOpen, deck, toggleModal, onCardSelected, selectedPositions }}>
       {children}
     </Provider>
   );

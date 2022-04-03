@@ -5,9 +5,10 @@ import ModalContext from '../Modal/ModalContext';
 const SmallCard = ({ card, cardKey }) => {
   const { suit, value, isSelected } = card;
   const { onCardSelected, toggleModal } = useContext(ModalContext);
+  const selected = isSelected ? 'isSelected' : '';
   return (
     <div
-      className={`smallCard smallCard-${suit} ${isSelected && 'isSelected'}`}
+      className={`smallCard smallCard-${suit} ${selected}`}
       onClick={() => {
         if (isSelected) {
           return;
@@ -16,7 +17,7 @@ const SmallCard = ({ card, cardKey }) => {
         onCardSelected(cardKey);
       }}
     >
-      <div className={`value`}>{value}</div>
+      <div className="smallCardValue">{value}</div>
       <div className={`${suit}`} />
     </div>
   );

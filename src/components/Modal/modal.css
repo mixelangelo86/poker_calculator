@@ -4,22 +4,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 1000;
   display: none;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  background: rgba(102, 103, 109, 0.4);
-  outline: 0;
-}
-.modalContent {
-  padding: 50px;
-  width: 60%;
-  background: black;
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  opacity: 1;
+  background: rgba(109, 109, 109, 0.6);
+  padding-top: 20%;
+  width: 100%;
 }
 
 .modalHeader {
@@ -33,6 +24,13 @@
 .modalIsOpen {
   display: block;
 }
+
 .modalIsClosed {
   display: none;
+}
+
+.closeButton {
+  width: 30px;
+  height: 30px;
+  margin-left: 150px;
 }

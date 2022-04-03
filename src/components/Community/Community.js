@@ -1,19 +1,18 @@
-import React from 'react';
 import Title from '../Title';
-import './community.css';
 import CardPosition from '../CardPosition';
+import './community.css';
 
-const CommunitySection = ({ cards }) => {
+const Community = () => {
   return (
     <div className="community">
       <Title text={'Community'} />
-      {/*<CardPosition />*/}
-      {/*<CardPosition />*/}
-      {/*<CardPosition />*/}
-      {/*<CardPosition />*/}
-      {/*<CardPosition />*/}
+      <CardPosition position={0} />
+      <CardPosition position={1} />
+      <CardPosition position={2} />
+      <CardPosition position={3} />
+      <CardPosition position={4} />
     </div>
   );
 };
 
-export default CommunitySection;
+export default Community;

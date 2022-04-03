@@ -2,12 +2,11 @@ import React, { useContext } from 'react';
 import ModalContext from '../Modal/ModalContext';
 import Card from '../Card';
 import { checkIsCardSelected } from './utils';
-import './cardSlot.css';
+import './cardPosition.css';
 
-const CardPosition = ({ index }) => {
+const CardPosition = ({ position }) => {
   const { toggleModal, deck } = useContext(ModalContext);
-  const card = checkIsCardSelected(deck, index);
-
+  const card = checkIsCardSelected(deck, position);
   const cardPosition = card ? (
     <Card suit={card.suit} value={card.value} />
   ) : (
@@ -19,7 +18,7 @@ const CardPosition = ({ index }) => {
       <div
         className="cardPosition"
         onClick={() => {
-          toggleModal(true, index);
+          toggleModal(true, position);
         }}
       >
         {cardPosition}

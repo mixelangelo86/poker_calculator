@@ -1,6 +1,4 @@
 .community {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 auto;
 }

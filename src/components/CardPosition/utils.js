@@ -1,7 +1,7 @@
-export const checkIsCardSelected = (deck, index) => {
+export const checkIsCardSelected = (deck, position) => {
   let card = null;
   deck.forEach(item => {
-    if (item.cardPositionIndex === index) {
+    if (item.position === position) {
       card = item;
     }
   });

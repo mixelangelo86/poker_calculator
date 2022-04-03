@@ -9,13 +9,14 @@
   padding: 3px;
   position: relative;
   display: inline-block;
-  width: 38px;
-  margin: 2px;
+  width: 36px;
   border-radius: 4px;
   border: 1px solid ghostwhite;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
   color: #fff;
+  font-size: 20px;
+  margin: 2px;
 }
 
 .smallCard .opacity {
@@ -38,46 +39,28 @@
   background: #3a915e;
 }
 
-.value {
+.smallCardValue {
   text-align: left;
 }
 
-.smallCard > .hearts:before {
-  content: '';
-}
-.smallCard > .hearts:after {
-  margin: 5px;
-  font-size: 25px;
-  color: #fff;
+.smallCard .hearts:after {
+  content: '♥';
+  color: #ffffff;
 }
 
-.smallCard .spades:before {
-  content: '';
-}
 .smallCard .spades:after {
-  margin: 5px;
-  font-size: 25px;
-  color: #fff;
+  content: '♠';
+  color: #ffffff;
 }
 
 .smallCard .clubs:before {
-  content: '';
-}
-.smallCard .clubs:after {
-  margin: 5px;
-  font-size: 25px;
-  color: #fff;
-  text-align: center;
+  content: '♣';
+  color: #ffffff;
 }
 
 .smallCard .diamonds:before {
-  content: '';
-}
-.smallCard .diamonds:after {
-  margin: 5px;
-  font-size: 25px;
-  color: #fff;
-  text-align: center;
+  content: '♦';
+  color: #ffffff;
 }
 
 .isSelected {

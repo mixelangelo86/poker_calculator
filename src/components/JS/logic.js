@@ -14,7 +14,8 @@ export const createDeck = () => {
     const a = values.map(value => ({
       value,
       suit: suitText,
-      card: value + suit,
+      isSelected: false,
+      position: null,
     }));
     deck.push(...a);
   }

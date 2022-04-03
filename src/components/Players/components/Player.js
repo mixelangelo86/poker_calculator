@@ -1,12 +1,14 @@
 import React from 'react';
 import CardPosition from '../../CardPosition';
-import AddPlayerButton from './AddPlayerButton';
+import Value from './Value';
 
-const Player = ({ playerIndex, onPlayerAdded, handleOnPlayerRemoved }) => {
+const Player = ({ player }) => {
+  const { firstCardIndex, secondCardIndex } = { ...player };
   return (
     <div className="player">
-      <CardPosition card={[]} index={playerIndex * 2 + 1} />
-      <CardPosition card={[]} index={playerIndex * 2 + 2} />
+      <CardPosition positionIndex={firstCardIndex} />
+      <CardPosition positionIndex={secondCardIndex} />
+      <Value firstCardIndex={firstCardIndex} secondCardIndex={secondCardIndex} />
     </div>
   );
 };
